@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You ❤️</title>
+
+<style>
+body{
+margin:0;
+font-family:Georgia,serif;
+background:linear-gradient(135deg,#fff5f5,#ffe4e1);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+overflow:hidden;
+}
+
+.card{
+background:white;
+width:90%;
+max-width:600px;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+text-align:center;
+animation:fade 1s;
+}
+
+h1{
+color:#d6336c;
+}
+
+button{
+padding:12px 25px;
+border:none;
+border-radius:30px;
+background:#ff4d6d;
+color:white;
+font-size:18px;
+cursor:pointer;
+margin-top:20px;
+}
+
+#letter{
+display:none;
+margin-top:20px;
+text-align:left;
+line-height:1.8;
+font-size:18px;
+}
+
+@keyframes fade{
+from{opacity:0;transform:translateY(20px);}
+to{opacity:1;transform:translateY(0);}
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>💌 A Letter For You</h1>
+
+<p>There's something I've been wanting to tell you...</p>
+
+<button onclick="showLetter()">Open Letter ❤️</button>
+
+<div id="letter">
+
+<p>Hai.</p>
+
+<p>
+Aku tidak tahu sejak kapan semua ini dimulai.
+Yang aku tahu, setiap kali berbicara denganmu,
+hari-hariku selalu terasa lebih baik.
+</p>
+
+<p>
+Maybe you don't realize it,
+but your presence means more than you know.
+</p>
+
+<p>
+Aku tidak bisa menjanjikan hubungan yang sempurna.
+But I promise to always respect you,
+support you,
+and grow together with you.
+</p>
+
+<p>
+Hari ini aku memilih untuk jujur.
+No more hiding my feelings.
+</p>
+
+<h2 style="text-align:center;color:#d6336c;">
+Will you be my girlfriend? ❤️
+</h2>
+
+</div>
+
+</div>
+
+<script>
+function showLetter(){
+document.getElementById("letter").style.display="block";
+}
+</script>
+
+</body>
+</html>
